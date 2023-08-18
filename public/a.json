@@ -1,0 +1,113 @@
+[
+    {
+      "id": 1,
+      "name": "XIAOMI",
+      "category": "Special Offers",
+      "image": "",
+      "description": "Xiaomi Corporation is a biggest Chinese multinational electronics company founded in April 2010 by entrepreneur.",
+      "price": 0,
+      "ratings": 2.2
+    },
+    {
+      "id": 2,
+      "name": "SHINECON",
+      "category": "Electronics",
+      "image": "",
+      "description": "Shinecon Eco VR headsets are designed to provide an immersive virtual reality experience, allowing users to engage with.",
+      "price": 0,
+      "ratings": 4.2
+    },
+    {
+      "id": 3,
+      "name": "JOYROOM",
+      "category": "Clothing",
+      "image": "",
+      "description": "Joyroom aims to provide users with high-quality and innovative accessories that complement devices.",
+      "price": 0,
+      "ratings": 4.4
+    },
+    {
+      "id": 4,
+      "name": "REALME",
+      "category": "Home",
+      "image": "",
+      "description": "Realme is a biggest Chinese smartphone manufacturer that was founded in May 2018 as a subsidiary of Oppo.",
+      "price": 0,
+      "ratings": 4.8
+    },
+    {
+      "id": 5,
+      "name": "UGREEN",
+      "category": "Food & Beverages",
+      "image": "",
+      "description": "UGREEN is a popular Chinese company that specializes in manufacturing and providing a wide range of electronic.",
+      "price": 0,
+      "ratings": 4.5
+    },
+    {
+      "id": 6,
+      "name": "SUPER STAR GROUP",
+      "category": "Outdoor",
+      "image": "",
+      "description": "Super star group company is a most popular electronics brand company in bangladesh. It is a group of company.",
+      "price": 0,
+      "ratings": 4.2
+    },
+    {
+      "id": 7,
+      "name": "SENCOR",
+      "category": "Electronics",
+      "image": "",
+      "description": "SENCOŘ is a Czech brand that produces a wide range of consumer electronics and appliances. The brand established in 1969.",
+      "price": 0,
+      "ratings": 4.3
+    },
+    {
+      "id": 8,
+      "name": "ANKER",
+      "category": "Health & Fitness",
+      "image": "",
+      "description": "Anker Innovations is a global technology company that specializes in designing and manufacturing a wide range of electronics.",
+      "price": 0,
+      "ratings": 3.9
+    },
+    {
+      "id": 9,
+      "name": "DELL",
+      "category": "Pets",
+      "image": "",
+      "description": "Dell is a multinational technology company that specializes in developing, selling, and supporting computers etc.",
+      "price": 0,
+      "ratings": 4.9
+    },
+    {
+      "id": 10,
+      "name": "ASUS",
+      "category": "Pets",
+      "image": "",
+      "description": "ASUS is a top multinational technology company that specializes in developing, selling, and supporting computers etc.",
+      "price": 0,
+      "ratings": 4.5
+    },
+    {
+      "id": 11,
+      "name": "CANON",
+      "category": "Pets",
+      "image": "",
+      "description": "Canon is a top multinational technology company that specializes in developing, selling, and supporting computers etc.",
+      "price": 0,
+      "ratings": 4.1
+    },
+    {
+      "id": 12,
+      "name": "IMOU",
+      "category": "Pets",
+      "image": "",
+      "description": "Imou is a top multinational technology company that specializes in developing, selling, and supporting computers etc.",
+      "price": 0,
+      "ratings": 4.8
+    }
+  ]
+  
+  
+  

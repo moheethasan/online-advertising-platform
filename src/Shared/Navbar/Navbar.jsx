@@ -1,12 +1,43 @@
-import { Link } from "react-router-dom"
-import logo from '../../assets/logo/logo.png'
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo/logo.png";
+import { AuthContext } from "../../Providers/AuthProviders";
+import { useContext } from "react";
+import './Navbar.css'
 
 const Navbar = () => {
-    const navItem = <>
-            <li><Link className="uppercase font-bold" to='/'>Home</Link></li>
-            <li><Link className="uppercase font-bold" to='/'>About</Link></li>
-            <li><Link className="uppercase font-bold" to='/'>Services</Link></li>
-        </>
+  const {user,logOut} = useContext(AuthContext);
+  console.log(user);
+  const handleSignOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+  const navItem = (
+    <>
+      <li>
+        <Link className="uppercase font-bold" to="/">
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link className="uppercase font-bold" to="/">
+          About
+        </Link>
+      </li>
+      <li>
+        <Link className="uppercase font-bold" to="allCompany">
+          All Company
+        </Link>
+      </li>
+      <li>
+        <Link className="uppercase font-bold" to="/">
+          Services
+        </Link>
+      </li>
+    </>
+  );
   return (
     <div className="fixed px-8 z-10 bg-opacity-30 bg-black navbar text-white">
       <div className="navbar-start">
@@ -34,15 +65,41 @@ const Navbar = () => {
             {navItem}
           </ul>
         </div>
-        <img style={{height: '75px', width: '130px'}} src={logo} alt="" />
+        <Link to={"/"}>
+          <img style={{ height: "75px", width: "130px" }} src={logo} alt="" />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {navItem}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{navItem}</ul>
       </div>
       <div className="navbar-end">
-        <Link className="btn bg-orange-500 border-none text-white font-bold">Login</Link>
+        {user ? (
+          <>
+            <div
+              className="tooltip tooltip-bottom"
+              data-tip={user?.displayName}
+            >
+              <img
+                style={{ height: "50px", width: "50px" }}
+                className="rounded-full mx-2 md:mx-4"
+                src={user?.photoURL}
+                alt=""
+              />
+            </div>
+            <Link onClick={handleSignOut}>
+              <a className="btn border-orange-500 bg-orange-500 text-white hover:text-orange-500 hover:border hover:border-orange-500 hover:bg-white">
+                signOut
+              </a>
+            </Link>
+          </>
+        ) : (
+          <Link
+            className="btn border-orange-500 bg-orange-500 text-white hover:text-orange-500 hover:border hover:border-orange-500 hover:bg-white"
+            to="/login"
+          >
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );
