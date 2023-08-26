@@ -7,7 +7,7 @@ const AdvertiseCard = ({ add }) => {
     <div>
       <div className="card bg-base-100 shadow-xl border border-b-0 border-t-orange-200 border-r-orange-100 border-l-orange-100">
         <figure>
-          <img src={image} alt="Shoes" />
+          <img src={image} alt="Logo" />
         </figure>
         <div className="card-body">
           <h2 className="card-title font-bold text-2xl">{name}</h2>

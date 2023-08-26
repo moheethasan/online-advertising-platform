@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Team = () => {
   return (
     <div className="bg-orange-100">
@@ -29,9 +31,9 @@ const Team = () => {
             Build strong relationships within your industry. Networking can lead
             to collaborations, partnerships, and opportunities for growth.
           </p>
-          <button className="btn bg-orange-500 text-white hover:text-orange-500 hover:border hover:border-orange-500 hover:bg-white mt-5">
+          <Link to="/addadvertise"><button className="btn bg-orange-500 text-white hover:text-orange-500 hover:border hover:border-orange-500 hover:bg-white mt-5">
             Advertise Now
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>

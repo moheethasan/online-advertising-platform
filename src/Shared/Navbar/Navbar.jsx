@@ -31,6 +31,13 @@ const Navbar = () => {
           All Company
         </Link>
       </li>
+     {
+      user? <li>
+      <Link className="uppercase font-bold" to="addadvertise">
+      Add Advertise
+      </Link>
+    </li>:<></>
+     }
       <li>
         <Link className="uppercase font-bold" to="/">
           Services

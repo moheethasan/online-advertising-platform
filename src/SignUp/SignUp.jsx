@@ -111,12 +111,7 @@ const SignUp = () => {
               />
                {errors.password?.type === 'required' && <p className='text-red-600' role="alert">password is required</p>}
               {errors.password?.type === "minLength" && <p className='text-red-600' role="alert">Password must be 6 characters</p>}
-              {errors.password?.type === "pattern" && <p className='text-red-600' role="alert">password have one upper case, one lower case, one digit and one special characters</p>}
-              <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
-              </label>
+              {errors.password?.type === "pattern" && <p className='text-red-600' role="alert">password have one upper case, one lower case, one digit and one special characters</p>} 
             </div>
             <div className="form-control">
               <label className="label">

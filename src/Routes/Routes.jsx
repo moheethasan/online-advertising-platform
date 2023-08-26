@@ -6,6 +6,7 @@ import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import AllCompany from "../pages/Home/AllCompany/AllCompany";
+import AddAdvertise from "../pages/AddAdvertise/AddAdvertise";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
         path: "allCompany",
         element: <AllCompany></AllCompany>,
       },
+      {
+        path: "addadvertise",
+        element: <AddAdvertise></AddAdvertise>,
+      }
     ],
   },
 ]);
